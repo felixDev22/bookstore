@@ -1,4 +1,5 @@
-import React from "react";
+import React from 'react';
+import Card from '../DisplayUI/Card';
 
 const AddNewBook = () => (
   <Card>
