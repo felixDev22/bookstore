@@ -11,11 +11,14 @@ const Navbar = () => (
         <li>
           <NavLink to="/">BOOKS</NavLink>
         </li>
-
+        <li>
+          <NavLink to="/categories">CATEGORIES</NavLink>
+        </li>
       </ul>
-
+      <div>
+        user action
+      </div>
     </nav>
-
   </header>
 );
 
