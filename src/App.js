@@ -1,15 +1,22 @@
 import React from 'react';
-import { Routes, Route } from 'React-router-dom';
-import Home from './pages/Home';
-import Categories from './pages/Categories'
+import { Routes, Route } from 'react-router-dom';
+import Display from './components/DisplayUI/Display';
+import Home from './components/pages/Home';
+import Categories from './components/pages/Categories';
 
-import './Index.css';
+import './index.css';
 
 const App = () => (
   <Display>
     <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/categories" element={<Categories />} />
+      <Route
+        path="/"
+        element={<Home />}
+      />
+      <Route
+        path="/categories"
+        element={<Categories />}
+      />
     </Routes>
   </Display>
 );

@@ -1,11 +1,17 @@
-/* stylelint-disable no-missing-end-of-source-newline */
-body {
+
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  padding: 5px;
+  text-decoration: none;
+  list-style: none;
 }
 
-.App-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+body {
+  background: #f3f4f8;
+  font-family: sans-serif;
+}
+
+a {
+  color: #092cdb;
 }
