@@ -1,5 +1,5 @@
 import React from 'react';
 
-const Categories = () => <h1>Hello Form Categories</h1>;
+const Categories = () => <button type="button">Check status</button>;
 
 export default Categories;
