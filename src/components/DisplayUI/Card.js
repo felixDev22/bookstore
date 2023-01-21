@@ -1,13 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import classes from './Card.module.css';
+import classes from './Card.modules.css';
 
 const Card = (props) => {
-  const { extra, children } = props;
+  const { extraclass, children } = props;
 
   return (
     <div
-      className={extra ? `${classes.card} ${extra}` : classes.card}
+      className={extraclass ? `${classes.card} ${extraclass}` : classes.card}
     >
       {children}
     </div>
@@ -15,12 +15,12 @@ const Card = (props) => {
 };
 
 Card.propTypes = {
-  extra: PropTypes.string,
+  extraclass: PropTypes.string,
   children: PropTypes.node.isRequired,
 };
 
 Card.defaultProps = {
-  extra: '',
+  extraclass: '',
 };
 
 export default Card;
