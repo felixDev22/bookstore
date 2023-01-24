@@ -1,23 +1,33 @@
-import { createReducer, createAction } from '@reduxjs/toolkit';
 
 // Define action type for addding & removing
-export const ADD_BOOK = createAction('books/add');
-export const REMOVE_BOOK = createAction('books/remove');
+const ADD_BOOK = 'bookstore/books/ADD_BOOK';
+const REMOVE_BOOK = 'bookstore/books/REMOVE_BOOK';
 
 // set intial state to an empty array of books
 const initialState = {
-  books: [],
+  books: [
+    {
+      id: 1,
+      title: 'Maasai Mara',
+      author: 'Bazu Bazu',
+      category: 'Adventure',
+    },
+    {
+      id: 2,
+      title: 'Giraffe Park',
+      author: 'Sonko Bazu',
+      category: 'Comedy',
+    },
+    {
+      id: 3,
+      title: 'Amboseli Mambo',
+      author: 'Kitu Safi',
+      category: 'Romance',
+    },
+  ],
 };
 
 // Reducer
-const booksReducer = createReducer(initialState, (builder) => {
-  builder.addCase(ADD_BOOK, (state, action) => {
-    state.books.push(action.payload);
-  });
-  builder.addCase(REMOVE_BOOK, (state, action) => {
-    state.books.filter((books) => books.id !== action.payload);
-  });
-  builder.addDefaultCase((state) => state);
-});
-
+const booksReducer = (state = initialState, action = {}) => {
+  if( act)
 export default booksReducer;
