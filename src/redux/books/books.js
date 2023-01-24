@@ -1,5 +1,3 @@
-import { createReducer } from '@reduxjs/toolkit';
-
 // Define action type for addding & removing
 const ADD_BOOK = 'bookstore/books/ADD_BOOK';
 const REMOVE_BOOK = 'bookstore/books/REMOVE_BOOK';
