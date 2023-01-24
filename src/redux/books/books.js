@@ -17,13 +17,15 @@ export const removeBook = (bookId) => ({
 // set intial state to an empty array of books
 const initialState = [];
 
-const booksReducer = createReducer(initialState, {
-  [ADD_BOOK]: (state, action) => {
-    state.push(action.payload);
-  },
-  [REMOVE_BOOK]: (state, action) => {
-    state.filter((book) => book.id !== action.payload);
-  },
-});
+const booksReducer = (state = initialState, action) => {
+  switch (action.type) {
+    case ADD_BOOK:
+      return [...state, action.payload];
+    case REMOVE_BOOK:
+      return [...state.filter((book) => book !== action.payload)];
+    default:
+      return state;
+  }
+};
 
 export default booksReducer;
