@@ -1,11 +1,11 @@
-import { createReducer, createAction } from '@reduxjs/toolkit';
+import { createReducer } from '@reduxjs/toolkit';
 
-export const CHECKING_STATUS = createAction('categories/check_staus');
+// Define action type for addding & removing
+const CHECK_STATUS = 'bookstore/categories/CHECK_STATUS';
+const CREATE_CATEGORIES = 'bookstore/Categories/CREATE_CATEGORIES';
 
 // set intial state to empty array
-const initialState = {
-  status: '',
-};
+const initialState = [];
 
 // Action creator
 const categoriesReducer = createReducer(initialState, (builder) => {
