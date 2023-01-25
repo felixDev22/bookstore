@@ -28,7 +28,7 @@ const booksReducer = (state = initialState, action = {}) => {
       return [...state, action.payload];
 
     case REMOVE_BOOK:
-      return state.filter((book) => book.id !== action.payload);
+      return state.filter((book) => book.id !== action.book.id);
     default:
       return state;
   }
@@ -39,9 +39,9 @@ export const addBook = (book) => ({
   payload: book,
 });
 
-export const removeBook = (id) => ({
+export const removeBook = (book) => ({
   type: REMOVE_BOOK,
-  payload: { id },
+  book,
 });
 
 export default booksReducer;

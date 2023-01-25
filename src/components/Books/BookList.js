@@ -6,8 +6,8 @@ import { removeBook } from '../../redux/books/books';
 const BookList = () => {
   const dispatch = useDispatch();
 
-  const handleDelete = (id) => {
-    dispatch(removeBook({ id }));
+  const handleDelete = (bookId) => {
+    dispatch(removeBook({ id: bookId }));
   };
   const bookHolder = useSelector((state) => state.book);
 
