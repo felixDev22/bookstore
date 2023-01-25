@@ -1,4 +1,4 @@
-// eslint-disable-next-line object-curly-newline
+/* eslint-disable react/prop-types */
 const Book = ({ title, author }) => (
   <li>
     <h3>{title}</h3>
