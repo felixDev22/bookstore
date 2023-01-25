@@ -57,12 +57,15 @@ button {
   justify-content: space-between;
 }
 
-.bookTitle {
-  width: 400px;
+.bookTitle,
+.author {
+  width: 350px;
   height: 40px;
+  padding: 10px;
 }
 
 select {
   width: 200px;
   height: 40px;
+  padding: 10px;
 }

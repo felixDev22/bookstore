@@ -34,7 +34,7 @@ const AddNewBook = () => {
             <input
               type="text"
               placeholder="Author"
-              className="Author"
+              className="author"
               value={author}
               required
               onChange={(e) => setTitle(e.target.value)}
