@@ -21,25 +21,35 @@ body {
 
 .container {
   margin: 20px 8%;
+  height: 100%;
 }
 
 a {
   color: #092cdb;
-}
-button {
-  background: var(--blue-clr);
-  color: white;
-  height: 40px;
 }
 
 .bookHolder {
   display: flex;
   padding: 20px;
   flex-direction: column;
-  border: 1px solid #89898a;
   width: 88%;
   height: 150px;
   margin-top: 20px;
+}
+
+.comment {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.book-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 88%;
+  margin-top: 40px;
+  border: 1px solid #000;
 }
 
 .form-container {
@@ -50,6 +60,23 @@ button {
   width: 88%;
   height: 150px;
   margin-top: 20px;
+  margin-bottom: 300px;
+}
+
+.btn {
+  color: #000;
+  border-style: none;
+  background-color: transparent;
+}
+
+.main-divider {
+  border: 1px solid #000;
+  height: 100%;
+}
+
+.line-divider {
+  border: 0.5px solid #000;
+  height: 25px;
 }
 
 .bookInput {
@@ -69,4 +96,10 @@ select {
   width: 200px;
   height: 40px;
   padding: 10px;
+}
+
+.add-btn {
+  background: var(--blue-clr);
+  color: white;
+  height: 40px;
 }
