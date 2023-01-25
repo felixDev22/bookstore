@@ -6,8 +6,8 @@ import { removeBook } from '../../redux/books/books';
 const BookList = () => {
   const dispatch = useDispatch();
 
-  const handleDelete = (bookId) => {
-    dispatch(removeBook({ id: bookId }));
+  const handleDelete = (id) => {
+    dispatch(removeBook({ id }));
   };
   const bookHolder = useSelector((state) => state.book);
 
@@ -15,7 +15,7 @@ const BookList = () => {
     <div className="bookHolder">
       {bookHolder.map((book) => (
         <div key={book.id} className="book-item">
-          <div className="book-title&author">
+          <div className="book-details">
             <Book title={book.title} author={book.author} />
             <br />
             <div className="comment">
@@ -38,9 +38,9 @@ const BookList = () => {
           </div>
 
           <div className="loading">
-            <h3>54% completed</h3>
+            <h3>80% completed</h3>
           </div>
-          <div className="Big-divider" />
+          <div className="main-divider" />
 
           <div className="Current">
             <p>CURRENT CHAPTER</p>
