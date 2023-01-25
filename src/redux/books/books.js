@@ -35,7 +35,15 @@ export const removeBook = (bookId) => ({
 const booksReducer = (state = initialState, action) => {
   switch (action.type) {
     case ADD_BOOK:
-      return [...state, action.payload];
+      return [
+        ...state,
+        {
+          id: uuidv4(),
+          author: action.book.author,
+          title: action.book.title,
+        },
+      ];
+
     case REMOVE_BOOK:
       return [...state.filter((book) => book !== action.payload)];
     default:
