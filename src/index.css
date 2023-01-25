@@ -1,10 +1,17 @@
-
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 5px;
+  padding: 0;
   text-decoration: none;
   list-style: none;
+}
+
+:root {
+  --blue-clr: #0190ff;
+  --light-blue: #96bcdc;
+  --grey-clr: #89898a;
+  --light-grey: #c8c8c8;
+  --background: #fafafa;
 }
 
 body {
@@ -12,6 +19,50 @@ body {
   font-family: sans-serif;
 }
 
+.container {
+  margin: 20px 8%;
+}
+
 a {
   color: #092cdb;
+}
+button {
+  background: var(--blue-clr);
+  color: white;
+  height: 40px;
+}
+
+.bookHolder {
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  border: 1px solid #89898a;
+  width: 88%;
+  height: 150px;
+  margin-top: 20px;
+}
+
+.form-container {
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  border: 1px solid #89898a;
+  width: 88%;
+  height: 150px;
+  margin-top: 20px;
+}
+
+.bookInput {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bookTitle {
+  width: 400px;
+  height: 40px;
+}
+
+select {
+  width: 200px;
+  height: 40px;
 }

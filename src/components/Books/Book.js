@@ -2,10 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Card from '../DisplayUI/Card';
 
-const Book = ({
-  id, title, author, category,
-}) => (
-  <li>
+// eslint-disable-next-line object-curly-newline
+const Book = ({ id, title, author, category }) => (
+  <li className="bookHolder">
     <Card id={id}>
       <h4>{category}</h4>
       <h3>{title}</h3>
