@@ -15,9 +15,7 @@ const Navbar = () => (
           <NavLink to="/categories">CATEGORIES</NavLink>
         </li>
       </ul>
-      <div>
-        user action
-      </div>
+      <div>user action</div>
     </nav>
   </header>
 );

@@ -1,24 +1,9 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import Card from '../DisplayUI/Card';
-
-const Book = ({
-  id, title, author, category,
-}) => (
+/* eslint-disable react/prop-types */
+const Book = ({ title, author }) => (
   <li>
-    <Card id={id}>
-      <h4>{category}</h4>
-      <h3>{title}</h3>
-      <p>{author}</p>
-    </Card>
+    <h3>{title}</h3>
+    <p>{author}</p>
   </li>
 );
-
-Book.propTypes = {
-  id: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  author: PropTypes.string.isRequired,
-  category: PropTypes.string.isRequired,
-};
 
 export default Book;

@@ -26,11 +26,13 @@
 # 📖 Book Store <a name="about-project"></a>
 
 The Bookstore is a website that allows the user to:
-- Display a list of books. 
-- Add a book. 
+
+- Display a list of books.
+- Add a book.
 - Remove a selected book.
 
 ## 🛠 Built With <a name="built-with"></a>
+
 - React
 - HTML
 - CSS
@@ -44,8 +46,8 @@ The Bookstore is a website that allows the user to:
 
 ### Key Features <a name="key-features"></a>
 
-- Display a list of books. 
-- Add a book. 
+- Display a list of books.
+- Add a book.
 - Remove a selected book.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -54,7 +56,8 @@ The Bookstore is a website that allows the user to:
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
->I will update the live demo at the end.
+> I will update the live demo at the end.
+
 <!-- - [Live Demo Link](https://FelixDev22.github.io/todo-list/) -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -109,7 +112,6 @@ Just run npm i to install all dependencies
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
 <!-- AUTHORS -->
 
 ## 👥 Author <a name="author"></a>
@@ -120,7 +122,6 @@ Just run npm i to install all dependencies
 - Twitter: [@twitterhandle](https://twitter.com/@monzo200)
 - LinkedIn: [LinkedIn](https://https://www.linkedin.com/in/felixnyamai/)
 
-
 Contributions, issues, and feature requests are welcome!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -128,7 +129,6 @@ Contributions, issues, and feature requests are welcome!
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
-
 
 - [ ] **Improve the UI**
 - [ ] **Add functionality**
@@ -162,10 +162,8 @@ I would like to thank microverse for the great resources shared.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
 <!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
-
+This project is [MIT](./LICENCE).licensed.
