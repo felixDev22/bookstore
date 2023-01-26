@@ -4,14 +4,8 @@ import { v4 as uuidv4 } from 'uuid';
 const CHECK_STATUS = 'bookstore/categories/CHECK_STATUS';
 const initialState = [];
 
-// Define action
-export const checkStatus = (status) => ({
-  type: CHECK_STATUS,
-  status,
-});
-
-// Define reducer
-const categoryReducer = (state = initialState, action) => {
+// reducers
+const categoryReducer = (state = initialState, action = {}) => {
   switch (action.type) {
     case CHECK_STATUS:
       return [
@@ -25,5 +19,11 @@ const categoryReducer = (state = initialState, action) => {
       return state;
   }
 };
+
+// action...
+export const checkStatus = (status) => ({
+  type: CHECK_STATUS,
+  status,
+});
 
 export default categoryReducer;

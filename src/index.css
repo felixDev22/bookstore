@@ -20,12 +20,33 @@ body {
 }
 
 .container {
-  margin: 20px 8%;
+  margin: 30px 8%;
   height: 100%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+  gap: 50px;
 }
 
 a {
   color: #092cdb;
+}
+
+.check-status {
+  margin-top: 30px;
+  padding: 10px 20px;
+}
+
+.status-btn p {
+  margin-top: 30px;
+  color: red;
 }
 
 .bookHolder {

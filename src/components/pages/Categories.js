@@ -8,10 +8,10 @@ const Categories = () => {
     const notice = { text: 'Under construction' };
     dispatch(checkStatus(notice));
   };
-  const statusCheck = useSelector((state) => state.Categories);
+  const statusCheck = useSelector((state) => state.category);
 
   return (
-    <div className="">
+    <div className="status-btn">
       <button type="button" className="check-status" onClick={handleClick}>
         check status
       </button>
