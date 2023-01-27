@@ -1,15 +1,15 @@
 import { useSelector, useDispatch } from 'react-redux';
 import Book from './Book';
 import AddNewBook from './AddNewBook';
-import { removeBook } from '../../redux/books/books';
+import { deleteBook } from '../../redux/api.js/apiCall';
 
 const BookList = () => {
   const dispatch = useDispatch();
 
   const handleDelete = (bookId) => {
-    dispatch(removeBook({ id: bookId }));
+    dispatch(deleteBook({ id: bookId }));
   };
-  const bookHolder = useSelector((state) => state.book);
+  const bookHolder = useSelector((state) => state.bookApi.data);
 
   return (
     <div className="bookHolder">
