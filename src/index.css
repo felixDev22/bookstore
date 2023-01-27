@@ -89,6 +89,15 @@ a {
   gap: 20px;
 }
 
+.spinner {
+  position: absolute;
+  margin-left: 370px;
+}
+
+.spinner i {
+  font-size: 3rem;
+}
+
 .loading h5 {
   font-size: 2rem;
   font-weight: 100;

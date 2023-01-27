@@ -36,7 +36,9 @@ const BookList = () => {
               </button>
             </div>
           </div>
-
+          <div className="spinner">
+            <i className="fa-sharp fa-solid fa-circle-notch" />
+          </div>
           <div className="loading">
             <h5>80%</h5>
             <p>completed</p>
