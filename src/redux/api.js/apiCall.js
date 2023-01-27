@@ -25,3 +25,12 @@ const getBooks = createAsyncThunk(GET_BOOKS, async () => {
 
   return bookList;
 });
+
+//post action
+const postBook = createAsyncThunk(POST_BOOKS, async (payload, api) => {
+  const endpoint = `/apps/${BooksID}/books`;
+  const url = `https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi${endpoint}`;
+  await axios.post(url, payload);
+
+  return api.dispatch(getBooks());
+});
