@@ -14,7 +14,7 @@ function App() {
     dispatch(getBooks());
   }, [dispatch]);
   return (
-    <div className="container">
+    <div>
       <Navbar />
       <Routes>
         <Route path="/" element={<BookList />} />
