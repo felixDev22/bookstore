@@ -1,42 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&family=Open+Sans:wght@400;500;600&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   text-decoration: none;
   list-style: none;
+  border: none;
 }
 
 :root {
   --blue-clr: #0190ff;
-  --light-blue: #96bcdc;
+  --light-blue: #3594e1;
   --grey-clr: #89898a;
-  --light-grey: #c8c8c8;
+  --light-grey: #e8e8e8;
   --background: #fafafa;
 }
 
 body {
-  background: #f3f4f8;
+  background: #ece6e6;
   font-family: sans-serif;
 }
 
 .container {
-  margin: 30px 8%;
+  margin: 0 8%;
   height: 100%;
 }
 
 nav {
+  width: 100%;
+  background: #fff;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-family: 'Open Sans', sans-serif;
+  height: 10vh;
+  padding: 0 8%;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+nav h2 {
+  color: var(--blue-clr);
 }
 
 nav ul {
   display: flex;
   gap: 50px;
+  margin-right: 70px;
 }
 
 a {
-  color: #092cdb;
+  color: var(--grey-clr);
+  letter-spacing: 0.8px;
+  font-size: small;
+  margin-left: 50px;
+}
+
+.fa-solid {
+  display: flex;
+  float: right;
+  color: #0190ff;
+  font-size: 1.6rem;
 }
 
 .check-status {
@@ -51,53 +79,106 @@ a {
 
 .bookHolder {
   display: flex;
-  padding: 20px;
   flex-direction: column;
-  width: 88%;
-  height: 150px;
+  align-items: center;
+  height: auto;
   margin-top: 20px;
+  font-family: 'Merriweather', serif;
 }
 
 .comment {
   display: flex;
   align-items: center;
+  margin-top: 30px;
   gap: 20px;
+}
+
+.btn {
+  background-color: transparent;
+  color: #65aeea;
+}
+
+.loading {
+  display: flex;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.spinner i {
+  font-size: 3rem;
+  margin-right: 20px;
+}
+
+.loading h5 {
+  font-size: 2rem;
+  font-weight: 100;
+}
+
+.loading p {
+  font-size: 0.9rem;
+  color: var(--grey-clr);
+}
+
+.current {
+  font-size: 1rem;
+  color: var(--grey-clr);
+  margin-right: 80px;
+}
+
+.current p {
+  margin-top: 10px;
+}
+
+.current h5 {
+  margin-top: 10px;
+  color: black;
 }
 
 .book-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 88%;
+  width: 100%;
+  height: 150px;
   margin-top: 40px;
-  border: 1px solid #000;
+  background: #fff;
+  border: 1px solid var(--light-grey);
+  border-radius: 5px;
+  padding: 20px;
 }
 
 .form-container {
   display: flex;
   padding: 20px;
   flex-direction: column;
-  border: 1px solid #89898a;
-  width: 88%;
-  height: 150px;
-  margin-top: 20px;
+  border-top: 1px solid #89898a;
+  width: 100%;
+  margin-top: 50px;
   margin-bottom: 300px;
 }
 
-.btn {
-  color: #000;
-  border-style: none;
-  background-color: transparent;
+.form-container h2 {
+  margin-top: 10px;
+  font-family: 'Open Sans', sans-serif;
+  color: var(--grey-clr);
+  margin-bottom: 20px;
 }
 
 .main-divider {
-  border: 1px solid #000;
+  border: 0.05px solid var(--light-grey);
   height: 100%;
 }
 
 .line-divider {
-  border: 0.5px solid #000;
+  border: 0.05px solid var(--light-grey);
   height: 25px;
+}
+
+.update {
+  background: var(--blue-clr);
+  color: white;
+  padding: 10px 30px;
+  border-radius: 5px;
+  font-size: 1rem;
 }
 
 .bookInput {
@@ -129,5 +210,7 @@ select {
 .add-btn {
   background: var(--blue-clr);
   color: white;
-  height: 40px;
+  padding: 10px 30px;
+  border-radius: 5px;
+  font-size: 1rem;
 }

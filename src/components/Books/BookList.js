@@ -12,7 +12,7 @@ const BookList = () => {
   const bookHolder = useSelector((state) => state.bookApi.data);
 
   return (
-    <div className="bookHolder">
+    <div className="bookHolder container">
       {bookHolder.map((book) => (
         <div key={book.id} className="book-item">
           <div className="book-details">
@@ -38,13 +38,19 @@ const BookList = () => {
           </div>
 
           <div className="loading">
-            <h3>80% completed</h3>
+            <div className="spinner">
+              <i className="fa-sharp fa-solid fa-circle-notch" />
+            </div>
+            <div>
+              <h5>80%</h5>
+              <p>completed</p>
+            </div>
           </div>
           <div className="main-divider" />
 
-          <div className="Current">
+          <div className="current">
             <p>CURRENT CHAPTER</p>
-            <p>CHAPTER 23</p>
+            <h5>Chapter 23</h5>
             <br />
             <button type="button" className="update">
               UPDATE PROGRESS
