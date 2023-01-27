@@ -42,9 +42,9 @@ const BookList = () => {
           </div>
           <div className="main-divider" />
 
-          <div className="Current">
+          <div className="current">
             <p>CURRENT CHAPTER</p>
-            <p>CHAPTER 23</p>
+            <p>Chapter 23</p>
             <br />
             <button type="button" className="update">
               UPDATE PROGRESS
