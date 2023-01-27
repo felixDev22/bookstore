@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 const Navbar = () => (
   <header>
     <nav>
-      <div className="nav-items container">
+      <div className="nav-left">
         <div>
           <h2>Bookstore CMS</h2>
         </div>
@@ -16,9 +16,13 @@ const Navbar = () => (
             <NavLink to="/categories">CATEGORIES</NavLink>
           </li>
         </ul>
-        <button type="button">
-          <i className="fa-sharp fa-solid fa-circle-user" />
-        </button>
+      </div>
+      <div className="nav-right">
+        <div>
+          <a href="/public/index.html">
+            <i className="fa-sharp fa-solid fa-circle-user" />
+          </a>
+        </div>
       </div>
     </nav>
   </header>
