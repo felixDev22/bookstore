@@ -45,7 +45,7 @@ const AddNewBook = () => {
           onChange={(e) => setAuthor(e.target.value)}
         />
         <select
-          name="category"
+          className="category"
           id="category"
           required
           onChange={(e) => setCategory(e.target.value)}
@@ -54,8 +54,11 @@ const AddNewBook = () => {
           <option value="Fiction">Fiction</option>
           <option value="Non-Fiction">Non-Fiction</option>
           <option value="Politics">Politics</option>
+          <option value="Fantasy">Fantasy</option>
           <option value="Romance">Romance</option>
           <option value="Poetry">Poetry</option>
+          <option value="Adventure">Adventure</option>
+          <option value="Science-fiction">Science-fiction</option>
         </select>
         <div>
           <button className="add-btn" value="ADD BOOK" type="submit">
