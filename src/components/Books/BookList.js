@@ -12,7 +12,7 @@ const BookList = () => {
   const bookHolder = useSelector((state) => state.bookApi.data);
 
   return (
-    <div className="bookHolder">
+    <div className="bookHolder container">
       {bookHolder.map((book) => (
         <div key={book.id} className="book-item">
           <div className="book-details">
