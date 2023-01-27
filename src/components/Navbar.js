@@ -16,7 +16,9 @@ const Navbar = () => (
             <NavLink to="/categories">CATEGORIES</NavLink>
           </li>
         </ul>
-        <div>user action</div>
+        <button type="button">
+          <i className="fa-sharp fa-solid fa-circle-user" />
+        </button>
       </div>
     </nav>
   </header>
