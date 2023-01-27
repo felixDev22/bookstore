@@ -38,7 +38,8 @@ const BookList = () => {
           </div>
 
           <div className="loading">
-            <h3>80% completed</h3>
+            <h5>80%</h5>
+            <p>completed</p>
           </div>
           <div className="main-divider" />
 
