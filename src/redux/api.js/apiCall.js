@@ -1,14 +1,15 @@
+/* eslint-disable no-param-reassign */
 const { createAsyncThunk, createSlice } = require('@reduxjs/toolkit');
 const { default: axios } = require('axios');
 
-//action type
+// action type
 const POST_BOOKS = 'bookstore/POST_BOOKS';
 const GET_BOOKS = 'bookstore/GET_BOOKS';
 const DELETE_BOOKS = 'bookstore/DELETE_BOOKS';
 
 const BooksID = 'C1cSMj0ZDVI91rbGgKJ9';
 
-//Get action
+// Get action
 const getBooks = createAsyncThunk(GET_BOOKS, async () => {
   const endpoint = `/apps/${BooksID}/books`;
   const url = `https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi${endpoint}`;
@@ -26,7 +27,7 @@ const getBooks = createAsyncThunk(GET_BOOKS, async () => {
   return bookList;
 });
 
-//post action
+// post action
 const postBook = createAsyncThunk(POST_BOOKS, async (payload, api) => {
   const endpoint = `/apps/${BooksID}/books`;
   const url = `https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi${endpoint}`;
@@ -35,8 +36,8 @@ const postBook = createAsyncThunk(POST_BOOKS, async (payload, api) => {
   return api.dispatch(getBooks());
 });
 
-//delete action
-const deleteBook = createAsyncThunk(DELETE_BOOK, async (payload, api) => {
+// delete action
+const deleteBook = createAsyncThunk(DELETE_BOOKS, async (payload, api) => {
   const endpoint = `/apps/${BooksID}/books/${payload.id}`;
   const url = `https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi${endpoint}`;
   await axios.delete(url);
@@ -44,7 +45,7 @@ const deleteBook = createAsyncThunk(DELETE_BOOK, async (payload, api) => {
   return api.dispatch(getBooks());
 });
 
-//reducers
+// reducers
 
 const bookApiReducer = createSlice({
   name: 'bookApi',
