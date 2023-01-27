@@ -26,7 +26,7 @@ const BookList = () => {
               <button
                 type="button"
                 className="btn"
-                onClick={() => handleDelete(book.id)}
+                onClick={() => handleDelete(book.Id)}
               >
                 Remove
               </button>
