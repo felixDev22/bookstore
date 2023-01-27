@@ -36,18 +36,21 @@ const BookList = () => {
               </button>
             </div>
           </div>
-          <div className="spinner">
-            <i className="fa-sharp fa-solid fa-circle-notch" />
-          </div>
+
           <div className="loading">
-            <h5>80%</h5>
-            <p>completed</p>
+            <div className="spinner">
+              <i className="fa-sharp fa-solid fa-circle-notch" />
+            </div>
+            <div>
+              <h5>80%</h5>
+              <p>completed</p>
+            </div>
           </div>
           <div className="main-divider" />
 
           <div className="current">
             <p>CURRENT CHAPTER</p>
-            <p>Chapter 23</p>
+            <h5>Chapter 23</h5>
             <br />
             <button type="button" className="update">
               UPDATE PROGRESS

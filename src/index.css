@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Noto+Sans:wght@200;300;400;500;600&family=Open+Sans:wght@400;500;600&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -9,7 +11,7 @@
 
 :root {
   --blue-clr: #0190ff;
-  --light-blue: #96bcdc;
+  --light-blue: #3594e1;
   --grey-clr: #89898a;
   --light-grey: #c8c8c8;
   --background: #fafafa;
@@ -80,6 +82,7 @@ a {
   align-items: center;
   height: auto;
   margin-top: 20px;
+  font-family: 'lora';
 }
 
 .comment {
@@ -89,13 +92,18 @@ a {
   gap: 20px;
 }
 
-.spinner {
-  position: absolute;
-  margin-left: 370px;
+.btn {
+  background-color: transparent;
+  color: #65aeea;
+}
+
+.loading {
+  display: flex;
 }
 
 .spinner i {
   font-size: 3rem;
+  margin-right: 20px;
 }
 
 .loading h5 {
@@ -139,15 +147,6 @@ a {
   width: 90%;
   margin-top: 20px;
   margin-bottom: 300px;
-}
-
-.btn {
-  border-style: none;
-  background-color: transparent;
-}
-
-button .btn {
-  color: var(--light-blues);
 }
 
 .main-divider {
