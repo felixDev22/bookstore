@@ -13,12 +13,12 @@
   --blue-clr: #0190ff;
   --light-blue: #3594e1;
   --grey-clr: #89898a;
-  --light-grey: #c8c8c8;
+  --light-grey: #e8e8e8;
   --background: #fafafa;
 }
 
 body {
-  background: #f3f4f8;
+  background: #ece6e6;
   font-family: sans-serif;
 }
 

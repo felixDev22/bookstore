@@ -19,7 +19,7 @@ const Navbar = () => (
       </div>
       <div className="nav-right">
         <div>
-          <a href="/public/index.html">
+          <a href="/public/index.html" aria-label="user">
             <i className="fa-sharp fa-solid fa-circle-user" />
           </a>
         </div>
