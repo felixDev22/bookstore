@@ -34,3 +34,12 @@ const postBook = createAsyncThunk(POST_BOOKS, async (payload, api) => {
 
   return api.dispatch(getBooks());
 });
+
+//delete action
+const delete = createAsyncThunk(DELETE_BOOKS, async (payload, api) => {
+  const endpoint = `/apps/${BooksID}/books`;
+  const url = `https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi${endpoint}`;
+  await axios.delete(url);
+
+  return api.dispatch(getBooks());
+})
