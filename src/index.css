@@ -20,14 +20,24 @@ body {
 }
 
 .container {
-  margin: 30px 8%;
+  margin: 0px 8%;
   height: 100%;
 }
 
 nav {
+  width: 100%;
+  background: #fff;
+}
+
+.nav-items {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 10vh;
+}
+
+nav h2 {
+  color: var(--blue-clr);
 }
 
 nav ul {
