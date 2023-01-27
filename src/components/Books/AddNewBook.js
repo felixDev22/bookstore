@@ -1,17 +1,25 @@
+import { nanoid } from '@reduxjs/toolkit';
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 
-import { addBook } from '../../redux/books/books';
+import { postBook } from '../../redux/api.js/apiCall';
 
 const AddNewBook = () => {
   const dispatch = useDispatch();
   const [title, setTitle] = useState('');
   const [author, setAuthor] = useState('');
+  const [category, setCategory] = useState('Select Category');
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const book = { title, author };
-    dispatch(addBook(book));
+    const book = {
+      item_id: nanoid(),
+      title,
+      author,
+      category,
+    };
+
+    dispatch(postBook(book));
     setTitle('');
     setAuthor('');
   };
@@ -36,6 +44,22 @@ const AddNewBook = () => {
           required
           onChange={(e) => setAuthor(e.target.value)}
         />
+        <select
+          className="category"
+          id="category"
+          required
+          onChange={(e) => setCategory(e.target.value)}
+        >
+          <option value="">{category}</option>
+          <option value="Fiction">Fiction</option>
+          <option value="Non-Fiction">Non-Fiction</option>
+          <option value="Politics">Politics</option>
+          <option value="Fantasy">Fantasy</option>
+          <option value="Romance">Romance</option>
+          <option value="Poetry">Poetry</option>
+          <option value="Adventure">Adventure</option>
+          <option value="Science-fiction">Science-fiction</option>
+        </select>
         <div>
           <button className="add-btn" value="ADD BOOK" type="submit">
             Add Book

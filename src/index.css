@@ -106,11 +106,18 @@ a {
 }
 
 .bookTitle,
-.author {
+.author,
+.category {
   width: 350px;
   height: 40px;
   padding: 10px;
   margin-right: 20px;
+}
+
+.category {
+  width: 220px;
+  height: 40px;
+  padding: 10px;
 }
 
 select {
