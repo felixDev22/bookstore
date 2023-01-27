@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Noto+Sans:wght@200;300;400;500;600&family=Open+Sans:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&family=Open+Sans:wght@400;500;600&display=swap');
 
 * {
   box-sizing: border-box;
@@ -23,7 +23,7 @@ body {
 }
 
 .container {
-  margin: 0px 8%;
+  margin: 0 8%;
   height: 100%;
 }
 
@@ -33,6 +33,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-family: 'Open Sans', sans-serif;
   height: 10vh;
   padding: 0 8%;
 }
@@ -82,7 +83,7 @@ a {
   align-items: center;
   height: auto;
   margin-top: 20px;
-  font-family: 'lora';
+  font-family: 'Merriweather', serif;
 }
 
 .comment {
@@ -99,6 +100,7 @@ a {
 
 .loading {
   display: flex;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .spinner i {
@@ -117,13 +119,18 @@ a {
 }
 
 .current {
-  font-size: O.2rem;
+  font-size: 1rem;
   color: var(--grey-clr);
   margin-right: 80px;
 }
 
 .current p {
   margin-top: 10px;
+}
+
+.current h5 {
+  margin-top: 10px;
+  color: black;
 }
 
 .book-item {
@@ -143,10 +150,17 @@ a {
   display: flex;
   padding: 20px;
   flex-direction: column;
-  border: 1px solid #89898a;
-  width: 90%;
-  margin-top: 20px;
+  border-top: 1px solid #89898a;
+  width: 100%;
+  margin-top: 50px;
   margin-bottom: 300px;
+}
+
+.form-container h2 {
+  margin-top: 10px;
+  font-family: 'Open Sans', sans-serif;
+  color: var(--grey-clr);
+  margin-bottom: 20px;
 }
 
 .main-divider {
@@ -196,5 +210,7 @@ select {
 .add-btn {
   background: var(--blue-clr);
   color: white;
-  height: 40px;
+  padding: 10px 30px;
+  border-radius: 5px;
+  font-size: 1rem;
 }
