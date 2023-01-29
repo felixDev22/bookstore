@@ -56,7 +56,7 @@ The Bookstore is a website that allows the user to:
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-[Live Demo Link](https://FelixDev22.github.io/todo-list/)
+[Live Demo Link](https://bookstore-app-f7ed66.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
